@@ -2,11 +2,11 @@
 
 Simulador epidemiológico basado en el modelo SIR (Susceptible-Infectado-Recuperado) implementado en C# .NET 8.0 con versiones secuencial y paralela para análisis de desempeño.
 
-## 📋 Descripción
+## Descripción
 
 Este proyecto implementa un modelo SIR sobre una grilla bidimensional de 1000×1000 celdas (1 millón de individuos) para simular la propagación de epidemias. Incluye implementaciones secuencial y paralela con análisis de escalabilidad fuerte.
 
-## 🎯 Características
+## Características
 
 - **Modelo SIR completo** con estados: Susceptible, Infectado, Recuperado, Fallecido
 - **Versión secuencial** optimizada como línea base
@@ -15,10 +15,10 @@ Este proyecto implementa un modelo SIR sobre una grilla bidimensional de 1000×1
 - **Análisis de desempeño** con métricas de speedup y eficiencia
 - **Exportación de datos** en formato CSV para análisis posterior
 
-## 📁 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
-epidemic-simulation-parallel/
+sir-parallel-sim/
 ├── docs/                           # Documentación del proyecto
 ├── parallel/                       # Implementación paralela
 │   ├── BlockProcessor.cs          # Procesamiento de bloques
@@ -60,7 +60,7 @@ epidemic-simulation-parallel/
     └── side_by_side.gif
 ```
 
-## 🚀 Requisitos
+## Requisitos
 
 - .NET 8.0 SDK
 - Python 3.8+ (para visualizaciones)
@@ -74,19 +74,19 @@ pip install -r visualization/requirements.txt
 
 Paquetes requeridos: `pandas`, `matplotlib`, `numpy`, `Pillow`
 
-## ⚙️ Instalación
+## Instalación
 
 ```bash
 # Clonar el repositorio
 git clone https://github.com/tu-usuario/epidemic-simulation-parallel.git
-cd epidemic-simulation-parallel
+cd sir-parallel-sim
 
 # Compilar ambas versiones
 dotnet build sequential/sequential.csproj -c Release
 dotnet build parallel/parallel.csproj -c Release
 ```
 
-## 🎮 Uso
+## Uso
 
 ### Ejecución Individual
 
@@ -99,7 +99,7 @@ cd scripts
 **Versión paralela:**
 ```bash
 cd scripts
-./run_parallel.sh [número_de_cores]
+./run_parallel.sh
 # Ejemplo: ./run_parallel.sh 8
 ```
 
@@ -147,7 +147,7 @@ Los resultados se guardan en el directorio `results/`:
 - `side_by_side.gif`: Comparación animada de ambas versiones
 - `comparison_report.txt`: Reporte textual de diferencias
 
-## 🔬 Parámetros del Modelo
+## Parámetros del Modelo
 
 | Parámetro | Valor | Descripción |
 |-----------|-------|-------------|
@@ -158,7 +158,7 @@ Los resultados se guardan en el directorio `results/`:
 | Tasa de mortalidad (μ) | 0.01 | Probabilidad diaria de muerte |
 | Duración | 365 días | Periodo de simulación |
 
-## 📈 Desempeño
+## Desempeño
 
 Tiempos promedio de ejecución en procesador multi-core:
 
@@ -169,7 +169,7 @@ Tiempos promedio de ejecución en procesador multi-core:
 | 4 | 1.78s | 1.63× | 40.7% |
 | 8 | 1.40s | 2.07× | 25.8% |
 
-## 🛠️ Tecnologías
+## Tecnologías
 
 - **C# .NET 8.0**: Implementación del modelo y simulación
 - **Parallel Extensions (TPL)**: Paralelización con Task Parallel Library
@@ -196,17 +196,15 @@ Cores,Time,Speedup,Efficiency
 ...
 ```
 
-## 📄 Licencia
+## Licencia
 
 Este proyecto es de código abierto y está disponible para fines educativos.
 
-## 👥 Autor
+## Autor
 
-Proyecto desarrollado como parte del análisis de simulaciones epidemiológicas paralelas.
+Dianny Michele De los santos De los santos - 2024-0213
+## Referencias
 
-## 🔗 Referencias
-
-1. Kermack & McKendrick (1927). Mathematical theory of epidemics
-2. Amdahl (1967). Single processor approach to computing
-3. Microsoft (2024). Parallel Programming in .NET
-4. Keeling & Rohani (2008). Modeling Infectious Diseases
+1. Keeling & Rohani (2008). Modeling Infectious Diseases
+2. Kermack & McKendrick (1927). Mathematical theory of epidemics
+3. Amdahl (1967). Single processor approach to computing
