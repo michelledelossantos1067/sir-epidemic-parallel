@@ -78,7 +78,7 @@ Paquetes requeridos: `pandas`, `matplotlib`, `numpy`, `Pillow`
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/epidemic-simulation-parallel.git
+git clone https://github.com/michelledelossantos1067/sir-epidemic-parallel.git
 cd sir-parallel-sim
 
 # Compilar ambas versiones
