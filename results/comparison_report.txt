@@ -1,0 +1,28 @@
+REPORTE DE COMPARACION - SIMULACION SIR
+======================================================================
+
+1. CONFIGURACION
+----------------------------------------------------------------------
+Dias simulados:     365
+Cores utilizados:   8
+
+2. RESULTADOS FINALES
+----------------------------------------------------------------------
+Susceptibles:       12989
+Infectados:         743952
+Recuperados:        75608
+Fallecidos:         83254
+R0 final:           9000.0000
+
+3. DESEMPEÑO
+----------------------------------------------------------------------
+Tiempo secuencial:  3.89 segundos
+Tiempo paralelo:    1.40 segundos
+Speedup:            2.77x
+Eficiencia:         34.6%
+
+4. VALIDACION
+----------------------------------------------------------------------
+Estado: Diferencia total = 107913
+
+======================================================================
