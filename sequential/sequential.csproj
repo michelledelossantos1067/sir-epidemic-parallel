@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>EpidemicSimulation.Sequential</RootNamespace>
+    <AssemblyName>epidemic_sequential</AssemblyName>
+    <Nullable>enable</Nullable>
+    <RollForward>LatestMinor</RollForward>
+  </PropertyGroup>
+
+</Project>

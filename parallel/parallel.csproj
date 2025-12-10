@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>EpidemicSimulation.Parallel</RootNamespace>
+    <AssemblyName>epidemic_parallel</AssemblyName>
+    <Nullable>enable</Nullable>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+    <RollForward>LatestMinor</RollForward>
+  </PropertyGroup>
+
+</Project>
